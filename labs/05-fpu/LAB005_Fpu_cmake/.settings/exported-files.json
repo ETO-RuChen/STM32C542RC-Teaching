@@ -1,0 +1,1151 @@
+{
+  "disclaimer": "Do not modify this file as it is used by STM32CubeMX2 to determine what and how to update your project with new configuration",
+  "version": "1.0.0",
+  "timestamp": "2026-11-02T21:26:20.966Z",
+  "files": [
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "248eb51fb30b9a31802bfa1d59f721b5cf119a9258fa4cfa9fe832e23ebd3576"
+      },
+      "file": "CMakeLists.txt"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "2f7f0d30717265135ebfe466f82e4dfb3024e0b764e02c41be49b5a99a5dfe22"
+      },
+      "file": "CMakePresets.json"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "0410d1ee7d4c5b5bb6e19de0148a6beca5c77e17a7b7455c121d91b72987c6fb"
+      },
+      "file": "cmake/components.cmake"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "f4ecedb30b3dc1e8ca919d300672e9372b96401c8aab9d4f9426a7e61903c47f"
+      },
+      "file": "cmake/files.cmake"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "7f253d6041baea749b5dc842c8ac9f695c3aa7664f1dccf7ce173d3bc3fb1645"
+      },
+      "file": "cmake/flags.cmake"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "4dd88fc36774ef644dd867b2363cd1f8e52e8e0320c67c1deef0c3bb0bd2eb24"
+      },
+      "file": "cmake/GCC.14.3.1.cmake"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "3613acd69f5eab6805704e6a4b955fcae965fdd4302c07fe3ea4f291ee1ecbe8"
+      },
+      "file": "cmake/target.cmake"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "9f0e52c4c9ab1ca9398bc16133e16f76e0f2337583897526e59de3202ece08cc"
+      },
+      "file": "stm32c5xx_dfp/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "7082ea45d926026c7759ebadc82b4f52285782f152e182ba534aa46c3daf8fe3"
+      },
+      "file": "stm32c5xx_dfp/LICENSE.md"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "5d5405c5b31e6325aa051103ca576c616bd1e8db196b0142318a85651814ff25"
+      },
+      "file": "stm32c5xx_dfp/README.md"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "253316e5a48335df29db61a884d2a49834d74784130e486bbb7bc0b5f3152dd1"
+      },
+      "file": "stm32c5xx_dfp/RTE_Components.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "9b0b987f61269ebca2ad08e19b15847ac4b75a7fabc145b79984d9db0fa8f806"
+      },
+      "file": "stm32c5xx_dfp/SW_Security_Level.md"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "173aef74c6d6573270155a796b1cab1604a9fbdcfdd81dd2be353918ce4f0b3c"
+      },
+      "file": "misc/STMicroelectronics.button_hw-part.2.2.0/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "47f0998f32ca5de88eed94feaa72a073a39a464894b20bc9049e4ad56e2da9cd"
+      },
+      "file": "misc/STMicroelectronics.crystal_hw-part.2.3.1/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d8e0bba1505f2adbc1d84d5b391f8fce0b90b14788928d89d31b6f61cb944c71"
+      },
+      "file": "misc/STMicroelectronics.esd_hw-part.2.2.0/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "74ade6fcba2c39872c2ac2f34f59fbce7c0211dc94c914a356e7b6064616c0dc"
+      },
+      "file": "misc/STMicroelectronics.led_hw-part.2.5.0/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "a5ec7e0ebb58a28dad5b988c7be3b15234609d6d6e2f98ff189a2924b1e5b9d6"
+      },
+      "file": "misc/STMicroelectronics.mcp2562fd_hw-part.2.1.0/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "4d8c1a94b3a77b1c7bfc175c62ddfe8e2e1a8bbb803974311186083ba63b4b6a"
+      },
+      "file": "misc/STMicroelectronics.nucleo-c542rc_hw-board.2.1.0/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "b64a4fd92019fc3714673efc10d0b5b1c2daeb8171d1d723b7358e1698db22cf"
+      },
+      "file": "misc/STMicroelectronics.nucleo-c542rc_hw-board.2.1.0/LICENSE.txt"
+    },
+    {
+      "fileGroup": "project_file",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d6f399bc437a5f8cf7342bbbfa88a7ea4519da2bed189e415e141f404ee4f513"
+      },
+      "file": "misc/STMicroelectronics.st-link_hw-part.2.1.0/CMakeLists.txt"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "46006553188d25ec773d1575d4a9b421fbcd1f2edd24c8ef6f6e0fcf3821349e"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c531xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "349e7120e915e83625792ce229036b0d69d81e26ef74667df2505953eff65618"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c532xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "4f9de3f986b5fb84aa7d66cbe7dc6e754b3cd89cf3ec6ebce625f63ccaeaddea"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c542xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "8e0aef38a7535406c61ba93c401232504e7253cc0d02fc4e1cf6fbfac36a70e9"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c551xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "67e1c89af96a651b1397638b1f124de1810eb862fa82ce1eaa0df8d06133ce81"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c552xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "6ee2faceda95f54b8581eae26ab58ce6b81ead388254eef8f468c84ad61bda3e"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c562xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d78078382dcc76a569b8c3a14beb185fcd95a45b297d3dc1bee242dd24a7e59d"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c591xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "82df3268b3c0365e1eaaa7936c06d3eefe5f6030e96892792d64dc878aabc87a"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c593xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "503dfccd15d4dbdac4f70f69ea8452b3a64842b1ca832678bf3a54b34b43112c"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c5a3xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "61a0b8c2674d9e817d70aa8d2693339273f4283694f8ab5f8dca077bb69913f7"
+      },
+      "file": "stm32c5xx_dfp/Include/stm32c5xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "f01366677643e30bfaf664e30ac29b792fe5733546cddc3992cfad88a50fd9c1"
+      },
+      "file": "stm32c5xx_dfp/Include/system_stm32c5xx.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "295b3c3735202e34bfa1af00f2ff65ae05e012866e81c90100f1af2f9b120ba7"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c531xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "6b8316d69b6f1a01e31700192918beb2b4c8d51adffaae6a0c787274b891a5ee"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c532xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "cc3f71f21df0e7711798c5a18814dc8a021b41e91af00bfd1b2159fe22256907"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c542xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "fced33fb8a7db5c05406aa4a045188dd2d81aa9f004d51b510aedf1455bc74d6"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c551xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "5c4ee77a6f18f5d086d272504e805cc8e36e09b7bb94281dc0f42356203b8dd8"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c552xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "414ef67348a05f8121894fcd756f10f1175358e1d47e0b7fc9eab8674114c77c"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c562xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "678eebb660460f874b9063ac565e460519fa3deb6529196c1402f37fc56ac301"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c591xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "fe87453a478f6b2a5e15a9ba63902cb803ae57ec11b6ee099c358c0461ac1fc2"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c593xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "2f190db5ebcef9eadc919fa6b9ac33d3f3650bf0321b6950b9d8af04fc84167e"
+      },
+      "file": "stm32c5xx_dfp/Source/startup_stm32c5a3xx.c"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "cb0bebbc5aff022ef58bf4b37504500bf8d17af23aaaf15a2cffc3c5d667d1e1"
+      },
+      "file": "stm32c5xx_dfp/Include/Templates/stm32_external_env.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "3756864b21d695eeeebdbf5b569570b783b4627f42bc7494b96fe5f217a1e12b"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/system_stm32c5xx.c"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "114327a6295974eaae1877e202758f8eb68ea22089bc16e945cbf695dea1f7ac"
+      },
+      "file": "user_modifiable/Device/STM32C542RCT6/gcc_linker_script.ld.src"
+    },
+    {
+      "fileGroup": "generated",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "bec638d23ef4e36717022a3b88cf1e4e5c7cfa31b8f989a4c652925807e45f22"
+      },
+      "file": "user_modifiable/Device/STM32C542RCT6/regions_NUCLEO-C542RC.h"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "2ca16ac98b5b1a961947be459cd7d8c2b2a7392abd0511297177cf132e310094"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c531xb_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "779dc32238a528cea2fe7a6e281c85f0e4245e1d7be37fa710fc20765fbcdd9d"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c531xc_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "bce933efae050e8727034a4e7e19e683488f1725a1ec2f48b5210957eedc59e5"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c531xx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "5a937b0c3a649928c6b64e2180b1d889e293f79d574fa5ed1dc2dd2844b07c0a"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c532xb_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "4853e0c2fd3f969fc346cc094e29a4a71fae76b9853d09d8fe311e0331371e46"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c532xc_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "e8cf34362dba7e74a8aec0647e4bc665d9c6ff9a82ea385c4ed43b7c8b4f4e54"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c532xx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "579ccd0ccb1333010ccbaa7f0790184223f3a7c6fb77acf8fa16944c8a491129"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c53xxb_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "2c6423b9b55a70dfd3f8fc36d64893dff6fce735154ea30fbf8cf7de1afe1513"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c53xxc_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "28aa08faf84e1b921130841eceb28e5a731c7c60863c9d3d099af2ff0ed81407"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c53xxx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "dc19c7fc36911ee4b627bb2fd4f0bda4130b6e0b5e1f062f873ce47c059facfe"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c542xc_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "1cfcb7c60d25d076141c7173d14965a426353c807b1955319c581748f1421b75"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c542xc_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "c473610e6850af256e91a8fd78378a7ee15fee0e36e1d7cfdc50caef56faa6ba"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c551xc_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "f11b865a71991c93779863d5e49e605e2d7a258a9804d1d21b2fdba7559934a0"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c551xe_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "c6dfb97d044243aee47a65fca4519db90eac19fb9aaca593b0a035e4374a4dd6"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c551xx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "cc4421e81cf87967c0d81761c21526acdd214e976495609498b2f52f31d0924e"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c552xc_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "39852542b2e8dee4f5564e8bbd497c8e28d676052854d046d8a4a387a62a6e0e"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c552xe_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "8803c9e110b713587dbd6ece5f339d88859a0d427c366f80a564e851b340ddb0"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c552xx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "6ac4e36d00e577f7a881bb06dc0375c7b752459d59a08a57318b49311f6e2ed2"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c55xxc_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "0da2472e9461f120d7fcf8db7d552b00e2b03096c990249d32f6fd3690444f60"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c55xxe_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "827d82b55b722b0c29dd2767b1e17855bab76852dac5a91074fa85f4a346a586"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c55xxx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "74e69aa17282903e5c6d59c679e121696c14e86db35cd29e8bd21a3d9d80fddf"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c562xe_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "e8962a466967f7105c5fee47c44bb700b8b4ebe98b10fd8784f675c082028b00"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c562xe_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "f1d94306bdd950c5791105dbaf537074c396ed5951310405c523a572113fbe80"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c591xe_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "a49f9a5104c81da2a54e312db2a74ea92422dd414abd87c82bb487bf3557685f"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c591xg_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "92e40c292f7d04f8424546122ac110085fab2231e5fd247df124b6de1a766a2d"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c591xx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "53c10dcf93cd69d70ca4f0fcd6ecd2a5e27ead55e56b191fb0b21564dc1d1dad"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c593xe_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "10f182d3646924061a2322ad2edb3a2bc0c8032befd72c6ef2494453e828c9fc"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c593xg_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "367f639f28162f53b5a2c1abbdad7fc6fb0371160881ed4f9d7cbfdb3212c1fd"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c593xx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "9a25443128cb24420b1cd7c623f4a52e29842a5313824846639d34fd754a527f"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c59xxe_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "f87b806feec56ad7f3e8277ad95b12b657d1164876ade80404f978dbcf8918bf"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c59xxg_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "459f5e97c787b2838741be50fb881f6a9004e0606364f18929040f099be5b159"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c59xxx_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d4b4ad5c8ad682cbb65c0933a1d9867c52e2cd88bbd32b6f04eef8ae2006d57f"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c5a3xg_flash.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "200396baa36a96c3af2e411bd203866af03f8ece5fa01adadc05709c2c46c809"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/arm/linker/stm32c5a3xg_sram.sct"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "5277278a787f12894bf68d858669f6d22ac2061e1a1a3232cbf03518f7e707c7"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c531xb_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "51da01da0396a12715e28e116dca56770209897d6cf637898aa59f7d7d84c303"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c531xc_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "849adfb0ab86416dd8cdc9c25c7a41848d34cb1580cbeb9037ff3bb6f3bb66cc"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c531xx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "950045f49aa3bc325b6b974fa9cc7a3abd72eaff1666099abc79f96181585ff2"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c532xb_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "cbe6502188c1fe0195f91360507955689d852f0f82a6b543aff2f6663001325c"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c532xc_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "52cb6894b4b03a8ab6c7e8640f113febe3549eda7325cdbcd0fea8712f7b5859"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c532xx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "73ee990f98b390136d194ded70725e803d8c283687e025ad057816f885615e58"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c53xxb_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "517487e22e97478ec8945070c9917eb6a90fafe2ef7e7fb377d62b5f51e1ea6a"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c53xxc_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "05b9db07f60ad32bf4b9c9b8d5ffe37de42904f82a3410a143afe0422c4c05d7"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c53xxx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "a705a813a146c1303bb3d07633931b44c7fcff8cdac334881861ae051a44d6de"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c542xc_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "9dccdae3d2de08fa6894f39a5f5596876868da5bc259810e269bf1d700ed9590"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c542xc_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "c83b3ee08c2b449224ac4fbf9572c709b579245c932c12c57efdb78f726b1d2b"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c551xc_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "212c7c34ee1ea5e47ab262b2353d7b046dee8b8651e3c887a34f4754c6e55a5c"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c551xe_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "dfa3ad1c62a96f033f0306eccb62cb84ad84b2611f4638704abf5a37318283bc"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c551xx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "7861365f30cf5f484cfabdf919bbbe647b82a36eff1b3b8b97b10036378aeef4"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c552xc_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "a2414bbc16ba82f03b16ac82dbdafa4b954a092b97ff7388ebb3575d03b3fbc9"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c552xe_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "6b543ffede9eac8c10feff0a5fe152f0d72c474729115734e1860da0a5ae4e68"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c552xx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "9c513c008789a9fd58178d399d041b276e3e7ae3a47d6b3b549081585b974ad0"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c55xxc_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "b859a0145deddbcf6be5ebcd810a85563e872a3346675b4d4e049bc39bdbcd6d"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c55xxe_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "caf876ae580e991fe9565fc8dc3d739c6fe9bd53cefef97f567a77644549bcdd"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c55xxx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "fee467fbe9f5eec359939c59227ccdf87ad8ea18655ed4573ffd036693627562"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c562xe_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "93b811cc91d6108d41f8032fdec76d0d251a75f0355be509e91b645b5aa77fac"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c562xe_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "91cfaec4a8863e6962d616e58486958d32bcf618d30d9d4a0153a4698cd22344"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c591xe_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "e381b372a7601a5e57366dc904b0aaa0555dc1c97312e9dee3a19161858279c6"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c591xg_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d90dec9cfa10231fe9afae17d60066b203d44373fb407ffbde79a6e612f82ef4"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c591xx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "2c4eabb15d9061b7ca6b97bdc9cca7889b1e51fceda0607d99b9fbd6f890d781"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c593xe_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "2d7fd55b496bc8505f7b84e228a5d14499b462c4029e5bca845195201571f0e0"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c593xg_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "1666ceb001c8b237e5667e7b4f1fbf0cf0650e462c6b3c9b20e58879b66d649c"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c593xx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "c4f276dc64a2e2b4b70e86d33678eadf8de3176c311fcb68aa78be10aec95d26"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c59xxe_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "c6de0d9d11910c866623f23bf5c4d031928cbee564bd1f6380e83f0be26025cb"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c59xxg_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "1439f91df8a10335d2e563c7a790c63624e8b5181b1240712b6b1b3c08556e39"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c59xxx_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "595b55e52b1ee483c8ac377c3d651264c0ad0b8ce45510d0fdc1c4e061d913fd"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c5a3xg_flash.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "3efaca2fe59db4e92beea716d51fed77e9b79d970aa1a6deca87e7309ae42709"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/gcc/linker/stm32c5a3xg_sram.ld"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "bd87394150a2d8bbedcffc077e8485d6c1a81ff75a316883ecfbaa4d4ddd056b"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c531xb_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d531083b9c16d5c43a7a0148a2258e045f90f364e0ff66ca33b63e1340db5f66"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c531xc_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "05cb1340877a80ec613c9cb2667a1c8c69b1bf8667a8b1b12966b2a7b8f2fc19"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c531xx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "97e8f2e584b3ee384fa56e64641b3ba2862237bb52ac7b98c19fc62be2bdcf7f"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c532xb_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "07f3ca71829fa913df49f52c35c20f46670b7c747329303bde5d386716ee8255"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c532xc_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "5a7896920f56cf1f27bb9e1356a1b706bffa531ae6d12ff08a69feaeecefbee4"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c532xx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "7fbfe263bac196a8ebdb9d10c8f125d577af773ecf51a0530a940f5d5a3448c9"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c53xxb_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "10b00a3ca6753fd0fbed08360e2e0d6ee4740cd8446f3274cf2162be07f292f2"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c53xxc_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "5db8e685f4031fd4a0bea1efd579ae8a99847e2baf51128f335d0bca4997973a"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c53xxx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "ceb771e9baa5e7eba340c97f57cd18040d341bd676a48a9b6d3e783ce21833cb"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c542xc_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "a5bfe270abc2eea7a2387683fa3ef8d7a807501b9976aa60ad1aac5ac47f103c"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c542xc_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "81183d68bf2c79114692f4c1ffc817d6747095ed7b6402cb7ab296268f9313a4"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c551xc_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "74faa955deae5281e34da600677b663bcbcb25a90fe90e28f59bc792fedcbd6f"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c551xe_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "935058039ee1a255bbee01b6e21cd840d901a64e520798e5171fe6996665dac9"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c551xx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "7cd013287d50d643d7da2c393929d332e6370783bcfd1a464790ea3c8de98f72"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c552xc_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "ea18cda6f96ae014f761538b75a0c25efc2fb6aaba22b2711144e773eb393b05"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c552xe_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "f9da46b3f51ca73935bc00c9ee4f0d8578d95d5f06c2884bb4c33b0af03857a9"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c552xx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "bd895341ced6a5651b605d758e3fb910e61ddc0a487c1cee020e9316da4b6c7f"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c55xxc_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "91dcd34a45289f267ea97011f74a81f09be3f4a3ff69d7bbbc79c291e964a9df"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c55xxe_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "ced3fd1704d52b23cc0f79510d79eb310e31f8f8b0922c3d8ae6e9e490528626"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c55xxx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "680d1898db90e8087d9b0dc9a6a2ab75c22f318bce35b23606bf733b1c6ad213"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c562xe_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "0261f7eded52195c1ab89cda65049e5ce4fa3698d614a210b738d5f28f9f1571"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c562xe_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "49ebb48347146b0ee8d0e7a4d92ee00214840b584fe62942150d5fbd2c16c767"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c591xe_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "fa025df4e0ab18d121fddac3df04d082a66994ab801c7e3aafada128206bdd17"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c591xg_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d6f67198057f5451f90ac180065e756a1e57039d54cb76676ae60fd6adc1f5bc"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c591xx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "15372c04a25774ad5995ee63f80028ec19e675bb067d79644c504094866d8c57"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c593xe_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "f5015791166a44b33a663c62c27b57b2ba52d062b719083fc12e30c450f17938"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c593xg_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "8eb8b4e200f5dce812641209708306d67ec7fb0df1ac9ea0d1a94c816bdad2d3"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c593xx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d7878c9e35e602d193b8ecbf7ec29605a4c680d54305b644adf20b0a598d5bc6"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c59xxe_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "6d1f56b78627aab2fd6db782f242e85dd606fc3745ad26584f3f7d17dc0d15b7"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c59xxg_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "d95da014f5671a9088f9c5a3e5bc424790d88663a9940afcea00af3533f8c73a"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c59xxx_sram.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "9e32a006861331f6617820e82d7548a7155c92756cd65d9fce25bcdb292138db"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c5a3xg_flash.icf"
+    },
+    {
+      "fileGroup": "pack",
+      "checksum": {
+        "algo": "sha256",
+        "digest": "c1c848ecea4c11d5a97da435a49bc6674f7bcb6c7006dd4ce6f99fd22b1b51cb"
+      },
+      "file": "stm32c5xx_dfp/Source/Templates/iar/linker/stm32c5a3xg_sram.icf"
+    }
+  ]
+}

@@ -25,5 +25,6 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 - [ ] ADC/DMA and GPDMA linked-list labs.
 - [ ] Retry LAB-004 after the CubeMX2 ADC codegen null-object failure is resolved or an official compatible configuration is identified.
 - [ ] FDCAN loopback without external transceiver.
-- [ ] AES, Hash, RNG, CORDIC, TrustZone, USB, QSPI, and FPU labs.
+- [ ] AES, Hash, RNG, CORDIC, TrustZone, USB, and QSPI labs.
+- [ ] Complete LAB-005 AP1 flash and COM3 capture.
 - [ ] Bootloader, IAP, transport-independent OTA, FreeRTOS, OSAL, and enterprise capstone.

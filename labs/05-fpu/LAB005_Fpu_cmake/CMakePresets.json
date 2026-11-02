@@ -1,0 +1,33 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}"
+        },
+        {
+            "name": "debug_GCC_NUCLEO-C542RC",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "${presetName}",
+                "TOOLCHAIN_FILE": "GCC.14.3.1.cmake",
+                "CPU": "Cortex-M33",
+                "FPU": "SP_FPU",
+                "DSP": "DSP"
+            },
+            "inherits": "default"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "configurePreset": "default"
+        },
+        {
+            "name": "debug_GCC_NUCLEO-C542RC",
+            "configurePreset": "debug_GCC_NUCLEO-C542RC"
+        }
+    ]
+}
