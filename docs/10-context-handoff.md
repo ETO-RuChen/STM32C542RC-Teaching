@@ -24,14 +24,12 @@ COM port: COM3
 - Confirm MCU ID with a programmer/debug probe and verify UART mapping with a minimal firmware.
 
 ## Known issues
-- No CubeMX-generated project exists here yet.
+- No teaching-project CubeMX-generated firmware exists here yet.
 - AP2 cannot identify the target; AP1 is the currently verified access port.
 - UART behavior and board LED/button response still need a generated firmware test.
 - CubeMX GPIO mode selection and CMake source generation are still pending.
 - The current ioc2 does not yet contain generated firmware sources.
-- CubeMX CMake export returned success without materializing the requested destination; this is a tooling workflow issue to resolve.
-- Migrated LAB-001 from the proven HAL2/CMake workflow and completed a clean configure/build in the corrected repository path.
-- Flashed and verified LAB-001 on the physical board through AP1; serial output is not expected for this lab.
+- The previous reference-project experiment was removed from this repository; its build workflow remains reference-only.
 
 ## Next Single Action
-Observe LAB-001 PA5/PC13 behavior, then migrate and build LAB-002 UART using the same proven workflow.
+Create LAB-001 from scratch in this repository using the reference workflow, then build it before any flash test.

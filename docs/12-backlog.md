@@ -5,7 +5,7 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 ## Hardware-dependent
 
 - [ ] Generate LAB-000 CMake source and flash a minimal LED/UART image.
-- [x] Migrate the proven LED/button HAL2 CMake workflow from the original experiments repository.
+- [ ] Implement LAB-001 independently; use the original experiments repository as reference only.
 - [ ] Resolve CubeMX 2 CMake export destination/generation behavior and capture the generated project.
 - [ ] Confirm LED polarity, button active level, and USART2 to COM3 using firmware.
 - [ ] Record a clean ST-LINK debug session through AP1.
