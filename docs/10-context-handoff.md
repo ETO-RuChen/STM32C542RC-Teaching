@@ -1,9 +1,9 @@
 # Context Handoff
 
-Current stage: LAB-003 software/register verified; external PWM waveform and LAB-001 physical B1 observation remain pending
+Current stage: LAB-005 FPU build/AP1 flash verified; COM3 capture and earlier physical observations remain pending
 Current branch: main
-Last completed lab evidence: LAB-003 build/flash/runtime/register evidence passed; direct external waveform and LAB-001 physical B1 checklist remain pending
-Hardware state: LAB-003 built, flashed, and running TIM2 PWM configuration on PA5 with USART2 logging through AP1
+Last completed lab evidence: LAB-005 build and AP1 flash/verify passed; COM3 output was not captured
+Hardware state: LAB-005 image flashed through AP1; serial runtime evidence pending
 COM port: COM3
 
 ## Completed
@@ -28,6 +28,9 @@ COM port: COM3
 - Created and verified LAB-002 USART2/ST-LINK VCP logging; clean COM3 capture confirmed the one-second sequence.
 - Created and verified LAB-003 TIM2_CH1 hardware PWM on PA5; AP1 flash verification, clean COM3 duty sweep, and GPIO/TIM2 register evidence passed.
 - Recorded the CubeMX2 2.1.0 omission of TIM2 GPIO setup and isolated the project-owned AF1 compatibility initialization in `app/app_timer_pwm.c`.
+- Added LAB-004 ADC/VrefInt/DMA source configuration and documented the reproducible CubeMX2 ADC generator null-object blocker.
+- Added LAB-005 Cortex-M33 single-precision FPU project with hard-float flags, self-contained CMSIS core headers, project-owned UART/app layer, build script, and teaching documents.
+- Built LAB-005 successfully and flashed/verified it through ST-LINK AP1 (Device ID 0x44F, Rev Z, 256 KiB).
 
 ## Incomplete
 - Physically press B1 once and visually confirm exactly one LAB-001 mode switch.
@@ -40,6 +43,7 @@ COM port: COM3
 - AP0/AP2 do not identify the target in this setup; AP1 is required.
 - LAB-002 uses blocking UART transmit intentionally; DMA UART is a later lab.
 - No one was available to press B1 during unattended verification, so physical debounce/edge behavior remains an explicit manual check.
+- CubeMX2 1.1.2 also reports the same null-object generator failure for minimal RNG/UART configurations; the exploratory RNG source was not retained as a lab.
 
 ## Next Single Action
-Create LAB-004 as an independent ADC + DMA project using an internal ADC channel, while keeping LAB-001 B1 observation as a manual backlog item.
+Capture LAB-005 output on COM3 after reset, then either fix/upgrade CubeMX2 ADC/RNG generation or proceed to the next independent advanced-peripheral lab.
