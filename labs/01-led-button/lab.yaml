@@ -1,0 +1,20 @@
+id: LAB-001
+name: led-button-hal2-baseline
+status: build-verified
+difficulty: beginner
+depends_on: [LAB-000]
+hardware:
+  required: [nucleo-c542rc]
+  optional: []
+external_wiring: false
+build:
+  working_directory: 01_LED_Button_cmake
+  configure: cube cmake --preset debug_GCC_NUCLEO-C542RC --fresh
+  build: cube cmake --build --preset debug_GCC_NUCLEO-C542RC --parallel 8
+  artifact: build/debug_GCC_NUCLEO-C542RC/01_LED_Button.elf
+verification:
+  build: passed
+  flash: pending
+  hardware: pending
+reusable_outputs: [part_drivers/led, part_drivers/button]
+acceptance: [clean configure succeeds, clean build succeeds, PA5 LED behavior verified, PC13 button behavior verified]
