@@ -1,0 +1,33 @@
+id: LAB-003
+name: tim2-hardware-pwm
+status: verified
+difficulty: beginner-plus
+depends_on:
+  - LAB-001
+  - LAB-002
+hardware:
+  required:
+    - nucleo-c542rc
+    - st-link-vcp
+  optional:
+    - oscilloscope
+    - logic-analyzer
+external_wiring: false
+signals:
+  pwm: PA5/TIM2_CH1
+  uart: USART2 PA2/PA3 COM3
+toolchain:
+  generator: STM32CubeMX2 1.1.2
+  build: CMake/Ninja
+  compiler: Arm GNU 14.2.1
+  programmer: STM32CubeProgrammer 2.23.0
+verification:
+  software_build: passed
+  flash_verify: passed
+  serial_banner: passed
+  pwm_waveform: passed
+acceptance:
+  - TIM2_CH1 is generated on PA5
+  - hardware PWM is approximately 144 Hz
+  - duty report changes from 0 to 1000 and back
+  - generated and application-owned code remain separated

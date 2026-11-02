@@ -20,7 +20,7 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 
 ## Future labs
 
-- [ ] Timer/PWM and advanced timer waveform labs.
+- [x] Complete LAB-003 AP1 flash, COM3 capture, and PA5 PWM register evidence.
 - [ ] ADC/DMA and GPDMA linked-list labs.
 - [ ] FDCAN loopback without external transceiver.
 - [ ] AES, Hash, RNG, CORDIC, TrustZone, USB, QSPI, and FPU labs.
