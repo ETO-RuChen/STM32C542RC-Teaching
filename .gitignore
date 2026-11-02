@@ -1,0 +1,17 @@
+build/
+out/
+Debug/
+Release/
+cmake-build-*/
+CMakeFiles/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.a
+.cache/
+.env
+*.pem
+*.key
+*.ioc~
