@@ -1,9 +1,9 @@
 # Context Handoff
 
-Current stage: LAB-001 implementation complete; physical B1 observation pending, LAB-002 is next
+Current stage: LAB-002 verified; LAB-001 physical B1 observation remains pending
 Current branch: main
-Last verified lab: LAB-000; LAB-001 build/flash/runtime evidence passed with physical B1 checklist pending
-Hardware state: LAB-001 built, flashed, verified and running default blink through AP1
+Last verified lab: LAB-002; LAB-001 build/flash/runtime evidence passed with physical B1 checklist pending
+Hardware state: LAB-002 built, flashed, verified and running USART2 logging through AP1
 COM port: COM3
 
 ## Completed
@@ -27,16 +27,15 @@ COM port: COM3
 - Added `scripts/Lab001.ps1` for reproducible generate/build/flash operations.
 
 ## Incomplete
-- Physically press B1 and visually confirm exactly one mode switch per press when the user returns.
-- Confirm USART2 PA2/PA3 to COM3 with LAB-002 firmware.
+- Physically press B1 once and visually confirm exactly one LAB-001 mode switch.
 - Continue replacing CubeMX-observed capability entries with official references and hardware evidence.
 - Keep LAB-001 BSP local until a second lab proves the interface is reusable.
 
 ## Known issues
 - CubeMX2 1.1.2 exports `mx_button.c` without `mx_button.h`; `platform/cubemx2_compat` contains the documented workaround.
 - AP0/AP2 do not identify the target in this setup; AP1 is required.
-- UART behavior is not part of LAB-001 and remains unverified.
+- LAB-002 uses blocking UART transmit intentionally; DMA UART is a later lab.
 - No one was available to press B1 during unattended verification, so physical debounce/edge behavior remains an explicit manual check.
 
 ## Next Single Action
-Create LAB-002 as an independent CubeMX2 project for USART2/ST-LINK VCP logging, then build before flashing.
+Create LAB-003 as an independent timer/PWM project, while keeping LAB-001 B1 observation as a manual backlog item.

@@ -1,0 +1,31 @@
+id: LAB-002
+name: usart2-stlink-vcp-logging
+status: verified
+difficulty: beginner
+depends_on:
+  - LAB-000
+hardware:
+  required:
+    - nucleo-c542rc
+    - st-link-vcp
+external_wiring: false
+serial:
+  peripheral: USART2
+  pins: PA2/PA3
+  port: COM3
+  format: 115200-8-N-1
+toolchain:
+  generator: STM32CubeMX2 1.1.2
+  build: CMake/Ninja
+  compiler: Arm GNU 14.2.1
+  programmer: STM32CubeProgrammer 2.23.0
+verification:
+  software_build: passed
+  flash_verify: passed
+  serial_banner: passed
+  periodic_sequence: passed
+acceptance:
+  - startup banner identifies LAB-002 and USART2
+  - serial format is 115200 8-N-1 with no flow control
+  - sequence and HAL tick lines repeat once per second
+  - generated and application-owned code remain separated

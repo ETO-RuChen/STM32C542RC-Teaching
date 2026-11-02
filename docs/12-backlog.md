@@ -8,14 +8,14 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 - [x] Implement LAB-001 independently; the original experiments repository was workflow reference only.
 - [x] Resolve CubeMX2 CMake export and record a reproducible generation command.
 - [x] Confirm PA5 LED polarity and PC13 active level from Board Part configuration; physically press B1 once when the user returns.
-- [ ] Confirm USART2 PA2/PA3 to COM3 with firmware in LAB-002.
+- [x] Confirm USART2 PA2/PA3 to COM3 with firmware in LAB-002.
 - [x] Record a clean ST-LINK build/flash/verify/debug session through AP1.
 
 ## Tooling and architecture
 
 - [x] Add repository validation script and CI check.
 - [x] Create platform/board/nucleo-c542rc contract.
-- [ ] Extract LED, button, UART, and logging modules only after evidence.
+- [ ] Extract LED, button, UART, and logging modules only after a second consumer proves reuse.
 - [x] Add an initial CubeMX-observed capability matrix; replace pending entries with official-source and hardware evidence.
 
 ## Future labs
