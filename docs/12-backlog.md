@@ -23,6 +23,7 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 - [x] Complete LAB-003 AP1 flash, COM3 capture, and PA5 PWM register evidence.
 - [ ] Connect the logic analyzer or oscilloscope to the board's PA5 header pin and capture the approximately 144 Hz TIM2 waveform.
 - [ ] ADC/DMA and GPDMA linked-list labs.
+- [ ] Retry LAB-004 after the CubeMX2 ADC codegen null-object failure is resolved or an official compatible configuration is identified.
 - [ ] FDCAN loopback without external transceiver.
 - [ ] AES, Hash, RNG, CORDIC, TrustZone, USB, QSPI, and FPU labs.
 - [ ] Bootloader, IAP, transport-independent OTA, FreeRTOS, OSAL, and enterprise capstone.

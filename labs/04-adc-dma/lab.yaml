@@ -1,0 +1,27 @@
+id: LAB-004
+name: adc-vrefint-dma
+status: in-progress
+difficulty: intermediate
+depends_on:
+  - LAB-002
+hardware:
+  required:
+    - nucleo-c542rc
+    - st-link-vcp
+external_wiring: false
+signals:
+  adc: ADC1 VrefInt internal channel
+  uart: USART2 PA2/PA3 COM3
+toolchain:
+  generator: STM32CubeMX2 1.1.2
+  build: CMake/Ninja
+verification:
+  source_configuration: passed
+  code_generation: blocked_by_generator_error
+  software_build: pending
+  hardware_runtime: pending
+acceptance:
+  - ADC1 samples the internal VrefInt channel
+  - DMA transfers samples into an application-owned buffer
+  - COM3 reports raw samples and a stable summary
+  - no external wiring is required
