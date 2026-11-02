@@ -1,0 +1,38 @@
+id: LAB-001
+name: led-button-modes
+status: in-progress
+difficulty: beginner
+depends_on:
+  - LAB-000
+hardware:
+  required:
+    - nucleo-c542rc
+  optional:
+    - oscilloscope
+    - logic-analyzer
+external_wiring: false
+board_resources:
+  led:
+    pin: PA5
+    active_level: high
+  button:
+    pin: PC13
+    active_level: high
+toolchain:
+  generator: STM32CubeMX2 1.1.2
+  build: CMake/Ninja
+  compiler: Arm GNU 14.2.1
+  programmer: STM32CubeProgrammer 2.23.0
+verification:
+  software: passed
+  flash_verify: passed
+  hardware_timing_sample: passed
+  physical_button_press: manual_check_pending
+reusable_outputs:
+  - bsp/bsp_led
+  - bsp/bsp_button
+acceptance:
+  - blink mode holds LED on for 1000 ms and off for 1000 ms
+  - breathe mode runs a smooth four-second rise/fall cycle with 200 Hz software PWM
+  - a debounced button press switches to the other mode exactly once
+  - modes are mutually exclusive and reset their phase on entry

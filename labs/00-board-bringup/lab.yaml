@@ -1,6 +1,6 @@
 id: LAB-000
 name: board-and-toolchain-bringup
-status: in-progress
+status: verified
 difficulty: beginner
 depends_on: []
 hardware:
@@ -15,8 +15,8 @@ toolchain:
   build: CMake/Ninja
   debug: ST-LINK
 verification:
-  software: partial
-  hardware: partial
+  software: passed
+  hardware: passed
 reusable_outputs:
   - platform/board/nucleo-c542rc
 acceptance:

@@ -17,13 +17,15 @@ resources:
   user_led:
     pin: PA5
     label: USER_LED
-    mode: pending
+    mode: output_push_pull_active_high
   user_button:
     pin: PC13
     label: USER_BUTTON
-    mode: pending
+    mode: input_active_high
 verification:
   board_identity: cubeprogrammer
   mcu_identity: cubeprogrammer
-  led_button_behavior: pending_firmware
+  led_behavior: verified_lab_001
+  button_configuration: generated_board_part_and_code_review
+  physical_button_press: manual_check_pending
   serial_data_path: pending_firmware

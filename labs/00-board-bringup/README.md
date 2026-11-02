@@ -6,7 +6,7 @@ Record verified NUCLEO-C542RC/MB2213 hardware facts, tool versions, build entry 
 
 ## Current status
 
-Software tools are present and the board is connected. CubeMX 2 created and saved the STM32C542RCT6 application configuration, but no source build has been generated yet because GPIO/UART board configuration is still pending.
+The board/toolchain path is verified by LAB-001: CubeMX2 generated a complete CMake/HAL project, Arm GNU built it, and CubeProgrammer flashed and verified it through ST-LINK AP1. UART data-path verification remains intentionally assigned to LAB-002.
 
 ## Evidence log
 
@@ -14,4 +14,4 @@ See evidence.md. Do not mark this lab verified from software installation alone.
 
 ## Current command notes
 
-CubeMX 2 created the LAB000_BoardBringup.ioc2 configuration for STM32C542RCT6. USART2 TX/RX are assigned to PA2/PA3 and labels USER_LED/USER_BUTTON are assigned to PA5/PC13. GPIO mode selection and CMake source generation remain pending.
+LAB-001 records the reusable command path and confirms PA5 GPIO output on hardware. The LAB-000 ioc2 remains a board-discovery artifact; application work starts from an independent lab configuration.
