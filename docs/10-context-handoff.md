@@ -1,9 +1,9 @@
 # Context Handoff
 
-Current stage: LAB-005 FPU build/AP1 flash verified; COM3 capture and earlier physical observations remain pending
+Current stage: LAB-005 FPU build/AP1 flash/COM3 runtime verified; LAB-001 physical B1 observation and LAB-003 waveform remain pending
 Current branch: main
-Last completed lab evidence: LAB-005 build and AP1 flash/verify passed; COM3 output was not captured
-Hardware state: LAB-005 image flashed through AP1; serial runtime evidence pending
+Last completed lab evidence: LAB-005 build, AP1 flash/verify, and COM3 runtime capture passed
+Hardware state: LAB-005 image flashed through AP1 and emitted the expected FPU result on COM3
 COM port: COM3
 
 ## Completed
@@ -31,6 +31,7 @@ COM port: COM3
 - Added LAB-004 ADC/VrefInt/DMA source configuration and documented the reproducible CubeMX2 ADC generator null-object blocker.
 - Added LAB-005 Cortex-M33 single-precision FPU project with hard-float flags, self-contained CMSIS core headers, project-owned UART/app layer, build script, and teaching documents.
 - Built LAB-005 successfully and flashed/verified it through ST-LINK AP1 (Device ID 0x44F, Rev Z, 256 KiB).
+- Captured LAB-005 runtime output on COM3 after opening the port before reset; the hard-float expression reported `3625`, matching 3.625 × 1000.
 
 ## Incomplete
 - Physically press B1 once and visually confirm exactly one LAB-001 mode switch.
@@ -44,6 +45,7 @@ COM port: COM3
 - LAB-002 uses blocking UART transmit intentionally; DMA UART is a later lab.
 - No one was available to press B1 during unattended verification, so physical debounce/edge behavior remains an explicit manual check.
 - CubeMX2 1.1.2 also reports the same null-object generator failure for minimal RNG/UART configurations; the exploratory RNG source was not retained as a lab.
+- LAB-005's capture begins with stale pre-reset bytes when COM3 is opened before a running target is reset; the subsequent startup and result lines are correct.
 
 ## Next Single Action
-Capture LAB-005 output on COM3 after reset, then either fix/upgrade CubeMX2 ADC/RNG generation or proceed to the next independent advanced-peripheral lab.
+Complete the LAB-001 physical B1 press/visual check if hardware access is available; otherwise proceed to the next independent advanced-peripheral lab while retaining that manual item.

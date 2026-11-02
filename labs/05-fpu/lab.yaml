@@ -1,8 +1,8 @@
 id: LAB-005
 title: Cortex-M33 single-precision FPU
-status: in-progress
+status: verified
 depends_on: [LAB-002]
 hardware: NUCLEO-C542RC; USART2 via ST-LINK VCP on COM3
 build: scripts/Lab005.ps1 -Action Build -Fresh
 flash: scripts/Lab005.ps1 -Action Flash
-evidence: build and AP1 flash/verify passed; COM3 capture pending
+evidence: build, AP1 flash/verify, and COM3 runtime capture passed
