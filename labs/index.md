@@ -5,7 +5,7 @@ Lab status is evidence-based: planned, in-progress, verified, or blocked. A plan
 | ID | Lab | Status | Dependencies |
 |---|---|---|---|
 | LAB-000 | Board and toolchain bring-up | in-progress | none |
-| LAB-001 | LED and button | build-verified | LAB-000 |
+| LAB-001 | LED and button | flash-verified | LAB-000 |
 | LAB-002 | UART logging | planned | LAB-000 |
 | LAB-003 | Timer and PWM | planned | LAB-001 |
 | LAB-004 | ADC and DMA | planned | LAB-002 |

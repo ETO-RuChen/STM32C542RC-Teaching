@@ -31,6 +31,7 @@ COM port: COM3
 - The current ioc2 does not yet contain generated firmware sources.
 - CubeMX CMake export returned success without materializing the requested destination; this is a tooling workflow issue to resolve.
 - Migrated LAB-001 from the proven HAL2/CMake workflow and completed a clean configure/build in the corrected repository path.
+- Flashed and verified LAB-001 on the physical board through AP1; serial output is not expected for this lab.
 
 ## Next Single Action
-Flash LAB-001 through AP1 and verify PA5/PC13 behavior; then use the same proven workflow for LAB-002 UART.
+Observe LAB-001 PA5/PC13 behavior, then migrate and build LAB-002 UART using the same proven workflow.
