@@ -20,7 +20,7 @@ capabilities:
   hash: {status: available, lab: LAB-008}
   rng_trng: {status: available, peripheral: RNG, lab: LAB-008}
   cordic: {status: available, lab: LAB-008}
-  trustzone: {status: not_yet_confirmed, device_core: Cortex-M33, lab: LAB-008}
-  fpu: {status: not_yet_confirmed, device_core: Cortex-M33, lab: LAB-008}
+  trustzone: {status: project_config_disabled, device_core: Cortex-M33, cmsis_attribute: NO_TZ, lab: LAB-008}
+  fpu: {status: device_pack_reports_available, precision: single, cmsis_attribute: SP_FPU, lab: LAB-008}
   freertos: {status: pack_available_in_cube_project, lab: LAB-010}
   flash_update: {status: available, nvm_kbytes: 256, lab: LAB-009}

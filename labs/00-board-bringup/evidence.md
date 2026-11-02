@@ -25,6 +25,8 @@ Date: 2026-11-03 (Asia/Shanghai)
 - Generated application source/build project: pending GPIO/UART configuration and code generation.
 - Pinout configuration: USART2_TX=PA2 and USART2_RX=PA3 assigned; PA5 labeled USER_LED; PC13 labeled USER_BUTTON.
 - GPIO mode configuration and generated CMake source: pending.
+- CubeMX resolved STM32C542RCT6 with pack stm32c5xx_dfp@2.1.0, Cortex-M33, DSP, SP_FPU, and TZ-disabled/NO_TZ.
+- CMake export returned success, but no destination source directory was materialized; export workflow remains pending.
 
 ## Debug access note
 
