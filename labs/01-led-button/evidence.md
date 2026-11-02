@@ -2,6 +2,18 @@
 
 Date: 2026-11-03 (Asia/Shanghai)
 
+## Fresh reproducibility check (2026-11-03)
+
+The current repository source was regenerated from `LAB001_LedButton.ioc2` with `scripts/Lab001.ps1 -Action Generate -Fresh`, completing all 26 compile/link steps with Arm GNU 14.2.1 and CMake/Ninja. The resulting ELF SHA-256 was:
+
+```text
+A81E2F1935B5E9EDE3968D6684B4198FEBE346F3FFCFE06408FA0022B8AE3216
+```
+
+The same image was flashed through the unique ST-LINK using AP1, Under Reset, hardware reset, and 1000 kHz. STM32CubeProgrammer 2.23.0 reported `Download verified successfully`, followed by a successful MCU reset.
+
+After reset, four independent AP1 reads of GPIOA ODR at roughly 1.1-second intervals observed PA5 as `0, 0, 1, 1` in this particular phase alignment. The samples are consistent with a one-second half-period; the firmware state machine and tick-based timing are the authoritative timing implementation.
+
 ## Configuration source
 
 - Board: NUCLEO-C542RC / STM32C542RCT6
@@ -89,4 +101,4 @@ No person was available to press B1 during unattended execution. The following r
 - a second press returns to blink;
 - the visible breathing curve is smooth to the observer.
 
-The input configuration, 20 ms debouncer, one-shot pressed-edge logic, exclusive mode state machine, and both output branches were reviewed and built. This narrows the remaining check to the physical switch and visual perception.
+The input configuration, 20 ms debouncer, one-shot pressed-edge logic, exclusive mode state machine, and both output branches were reviewed and built. This narrows the remaining check to the physical switch and visual perception. The unattended run cannot truthfully claim that a human physically pressed B1; this remains an explicit manual hardware observation.

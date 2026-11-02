@@ -6,7 +6,7 @@ Start with AGENTS.md, .codex/project.yaml, and docs/10-context-handoff.md. Work 
 
 ## Current lab
 
-[LAB-001: board LED breathe/blink with button mode switching](labs/01-led-button/README.md) is the first complete CubeMX2/HAL/CMake project. Its build, AP1 flash/verify, blink timing, and breathe-state runtime checks pass; a physical B1 press remains an explicit manual observation. It uses only the onboard PA5 LED and PC13 button.
+[LAB-001: board LED breathe/blink with button mode switching](labs/01-led-button/README.md) is the first complete CubeMX2/HAL/CMake project. Its current source has been freshly regenerated, built, flashed and verified through AP1; blink timing and breathe-state runtime checks pass. A physical B1 press remains an explicit manual observation rather than an unverified claim. It uses only the onboard PA5 LED and PC13 button.
 
 ```powershell
 .\scripts\Lab001.ps1 -Action Build
