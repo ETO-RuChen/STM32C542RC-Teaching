@@ -12,11 +12,15 @@ Date: 2026-11-03 (Asia/Shanghai)
 
 ## Hardware checks
 
-- Board identity: NUCLEO-C542RC is the working target; physical silkscreen confirmation still pending
-- ST-LINK connection: Windows enumerated ST-Link Debug (USB VID_0483/PID_3754)
-- MCU ID: pending; no programmer CLI was found in the standard ST installation paths
+- Board identity: CubeProgrammer reports NUCLEO-C542RC
+- ST-LINK connection: Windows enumerated ST-Link Debug (USB VID_0483/PID_3754); ST-LINK probe 002E00233235510F37333439, firmware V3J17M11
+- MCU ID: AP1 connection succeeded; Device ID 0x44F, Rev Z, STM32C53x/542, Cortex-M33, NVM 256 KBytes
 - Virtual COM port: STMicroelectronics STLink Virtual COM Port (COM3)
-- UART mapping: expected USART2 PA2/PA3 from the existing board notes; must be confirmed against this board and firmware
+- UART mapping: expected USART2 PA2/PA3 from the existing board notes; must be confirmed with firmware
+
+## Debug access note
+
+AP2 returned No STM32 target found; AP1 successfully identified the target. Future programmer commands for this board should use AP1 unless official documentation proves otherwise. No erase, write, option-byte, or security operation was performed.
 
 ## Next test
 

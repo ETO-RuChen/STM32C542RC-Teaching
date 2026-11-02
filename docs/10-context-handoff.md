@@ -3,13 +3,14 @@
 Current stage: repository bootstrap
 Current branch: main
 Last verified lab: none
-Hardware state: ST-LINK Debug and STLink Virtual COM enumerated by Windows
+Hardware state: ST-LINK connected; CubeProgrammer identified NUCLEO-C542RC target through AP1
 COM port: COM3
 
 ## Completed
 - Created a separate public GitHub repository for the teaching project.
 - Added AI-readable project rules and metadata.
 - Confirmed Windows enumeration of ST-LINK and COM3.
+- Confirmed read-only CubeProgrammer connection through AP1: Device ID 0x44F, Rev Z, 256 KB NVM.
 
 ## Incomplete
 - Confirm official board resources and STM32C542RC capability matrix.
@@ -19,8 +20,8 @@ COM port: COM3
 
 ## Known issues
 - No CubeMX-generated project exists here yet.
-- Board silkscreen and MCU ID are not yet independently recorded.
-- STM32 programmer CLI was not found in standard installation paths.
+- AP2 cannot identify the target; AP1 is the currently verified access port.
+- UART behavior and board LED/button response still need a generated firmware test.
 
 ## Next Single Action
-Create the first CubeMX/CMake board bring-up project and verify LED plus USART2/COM3 on hardware.
+Create the first CubeMX/CMake board bring-up project and verify LED plus USART2/COM3 on hardware, using AP1 for debug access.
