@@ -1,6 +1,6 @@
 id: LAB-003
 name: tim2-hardware-pwm
-status: verified
+status: in-progress
 difficulty: beginner-plus
 depends_on:
   - LAB-001
@@ -25,7 +25,7 @@ verification:
   software_build: passed
   flash_verify: passed
   serial_banner: passed
-  pwm_waveform: passed
+  pwm_waveform: pending
 acceptance:
   - TIM2_CH1 is generated on PA5
   - hardware PWM is approximately 144 Hz

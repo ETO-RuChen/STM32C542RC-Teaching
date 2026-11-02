@@ -1,9 +1,9 @@
 # Context Handoff
 
-Current stage: LAB-003 verified; LAB-001 physical B1 observation remains pending
+Current stage: LAB-003 software/register verified; external PWM waveform and LAB-001 physical B1 observation remain pending
 Current branch: main
-Last verified lab: LAB-003; LAB-001 build/flash/runtime evidence passed with physical B1 checklist pending
-Hardware state: LAB-003 built, flashed, verified and running TIM2 PWM on PA5 with USART2 logging through AP1
+Last completed lab evidence: LAB-003 build/flash/runtime/register evidence passed; direct external waveform and LAB-001 physical B1 checklist remain pending
+Hardware state: LAB-003 built, flashed, and running TIM2 PWM configuration on PA5 with USART2 logging through AP1
 COM port: COM3
 
 ## Completed

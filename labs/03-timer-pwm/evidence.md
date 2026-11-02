@@ -10,6 +10,6 @@ Flash was performed with STM32CubeProgrammer 2.23.0 through ST-LINK AP1, Under R
 
 COM3 was opened at 115200/8-N-1, its receive buffer was cleared, and the MCU was reset. A clean capture began with `[LAB-003] TIM2 hardware PWM ready`, followed by duty reports from `0/1000` through `1000/1000` and back to `0/1000`, at 20 ms intervals.
 
-After the reset, AP1 register reads provided independent hardware evidence: GPIOA MODER showed PA5 in alternate-function mode, GPIOA AFRL contained AF1 for PA5, TIM2 CR1 had CEN set, TIM2 CCMR1 selected PWM mode 1, ARR was `0x3E7` (999), and CCR1 was observed changing. These values establish that PA5 is driven by a running TIM2 PWM channel rather than a software-only serial demonstration.
+After the reset, AP1 register reads provided independent hardware evidence: GPIOA MODER showed PA5 in alternate-function mode, GPIOA AFRL contained AF1 for PA5, TIM2 CR1 had CEN set, TIM2 CCMR1 selected PWM mode 1, ARR was `0x3E7` (999), and CCR1 was observed changing. These values establish that the MCU is configured to drive PA5 from a running TIM2 PWM channel rather than a software-only serial demonstration. A direct logic-analyzer/oscilloscope capture at the PA5 header pin remains pending.
 
 Known CubeMX2 behavior: version 2.1.0 generated the TIM2 channel but omitted its GPIO initialization despite the pinout assignment. The project-owned compatibility function in `app/app_timer_pwm.c` supplies the documented PA5 AF1 configuration while leaving generated code untouched.
