@@ -18,6 +18,12 @@ Date: 2026-11-03 (Asia/Shanghai)
 - Virtual COM port: STMicroelectronics STLink Virtual COM Port (COM3)
 - UART mapping: expected USART2 PA2/PA3 from the existing board notes; must be confirmed with firmware
 
+## CubeMX project generation
+
+- CubeMX 2 CLI created LAB000_BoardBringup.ioc2 for STM32C542RCT6.
+- CubeMX project save returned success.
+- Generated application source/build project: pending GPIO/UART configuration and code generation.
+
 ## Debug access note
 
 AP2 returned No STM32 target found; AP1 successfully identified the target. Future programmer commands for this board should use AP1 unless official documentation proves otherwise. No erase, write, option-byte, or security operation was performed.

@@ -11,6 +11,7 @@ COM port: COM3
 - Added AI-readable project rules and metadata.
 - Confirmed Windows enumeration of ST-LINK and COM3.
 - Confirmed read-only CubeProgrammer connection through AP1: Device ID 0x44F, Rev Z, 256 KB NVM.
+- Created and saved the first STM32CubeMX 2 ioc2 configuration for LAB-000.
 
 ## Incomplete
 - Confirm official board resources and STM32C542RC capability matrix.
@@ -22,6 +23,7 @@ COM port: COM3
 - No CubeMX-generated project exists here yet.
 - AP2 cannot identify the target; AP1 is the currently verified access port.
 - UART behavior and board LED/button response still need a generated firmware test.
+- CubeMX source generation is pending verified LED/button pin assignments.
 
 ## Next Single Action
 Create the first CubeMX/CMake board bring-up project and verify LED plus USART2/COM3 on hardware, using AP1 for debug access.
