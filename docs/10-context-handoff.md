@@ -14,6 +14,7 @@ COM port: COM3
 - Created and saved the first STM32CubeMX 2 ioc2 configuration for LAB-000.
 - Assigned USART2 PA2/PA3 and labeled PA5/PC13 for the board LED/button in the ioc2.
 - Added a living backlog, architecture roadmap, repository validation script, and GitHub Actions structure check.
+- Added a CubeMX-observed capability matrix and NUCLEO-C542RC platform contract.
 
 ## Incomplete
 - Confirm official board resources and STM32C542RC capability matrix.

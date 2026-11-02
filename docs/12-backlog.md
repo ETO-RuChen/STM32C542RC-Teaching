@@ -13,7 +13,7 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 - [ ] Add repository validation script and CI check.
 - [ ] Create platform/board/nucleo-c542rc contract.
 - [ ] Extract LED, button, UART, and logging modules only after evidence.
-- [ ] Add capability matrix from official STM32C542 sources.
+- [x] Add an initial CubeMX-observed capability matrix; replace pending entries with official-source and hardware evidence.
 
 ## Future labs
 

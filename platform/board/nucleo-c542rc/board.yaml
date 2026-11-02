@@ -1,0 +1,29 @@
+board: NUCLEO-C542RC
+board_id: MB2213
+mcu: STM32C542RCT6
+debug:
+  interface: ST-LINK
+  access_port: AP1
+  verified_probe_firmware: V3J17M11
+serial:
+  interface: ST-LINK Virtual COM Port
+  observed_port: COM3
+  expected_uart: USART2
+  expected_pins:
+    tx: PA2
+    rx: PA3
+  baud: 115200
+resources:
+  user_led:
+    pin: PA5
+    label: USER_LED
+    mode: pending
+  user_button:
+    pin: PC13
+    label: USER_BUTTON
+    mode: pending
+verification:
+  board_identity: cubeprogrammer
+  mcu_identity: cubeprogrammer
+  led_button_behavior: pending_firmware
+  serial_data_path: pending_firmware

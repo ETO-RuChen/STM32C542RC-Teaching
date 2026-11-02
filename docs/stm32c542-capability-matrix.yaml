@@ -1,0 +1,26 @@
+device: STM32C542RCT6
+evidence:
+  source: STM32CubeMX 2 peripheral listing and STM32CubeProgrammer target identification
+  target_id: 0x44F
+  nvm_kbytes: 256
+  status: observed
+capabilities:
+  gpio: {status: available, lab: LAB-001}
+  uart_usart: {status: available, instances: [USART1, USART2, UART4, UART5, LPUART1], lab: LAB-002}
+  timer: {status: available, instances: [TIM1, TIM2, TIM6, TIM7, TIM8, TIM12, TIM15, LPTIM1], lab: LAB-003}
+  adc: {status: available, instances: [ADC1], lab: LAB-004}
+  dma: {status: available, configuration: pending, lab: LAB-004}
+  fdcan: {status: available, instances: [FDCAN1, FDCAN2], lab: LAB-007}
+  i2c: {status: available, instances: [I2C1], lab: LAB-008}
+  i3c: {status: available, instances: [I3C1], lab: LAB-008}
+  spi: {status: available, instances: [SPI1, SPI2], lab: LAB-008}
+  usb: {status: available, controller: USB_DRD_FS, modes: [HOST, DEVICE], lab: LAB-008}
+  xspi_qspi: {status: not_yet_confirmed, lab: LAB-008}
+  aes: {status: available, lab: LAB-008}
+  hash: {status: available, lab: LAB-008}
+  rng_trng: {status: available, peripheral: RNG, lab: LAB-008}
+  cordic: {status: available, lab: LAB-008}
+  trustzone: {status: not_yet_confirmed, device_core: Cortex-M33, lab: LAB-008}
+  fpu: {status: not_yet_confirmed, device_core: Cortex-M33, lab: LAB-008}
+  freertos: {status: pack_available_in_cube_project, lab: LAB-010}
+  flash_update: {status: available, nvm_kbytes: 256, lab: LAB-009}

@@ -3,7 +3,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$required = @('README.md', 'AGENTS.md', '.codex/project.yaml', 'docs/10-context-handoff.md', 'labs/index.md')
+$required = @('README.md', 'AGENTS.md', '.codex/project.yaml', 'docs/10-context-handoff.md', 'docs/stm32c542-capability-matrix.yaml', 'labs/index.md', 'platform/board/nucleo-c542rc/board.yaml')
 $missing = @($required | Where-Object { -not (Test-Path (Join-Path $Root $_)) })
 if ($missing.Count -gt 0) {
     Write-Error ("Missing required files: " + ($missing -join ', '))
