@@ -1,9 +1,9 @@
 # Context Handoff
 
-Current stage: LAB-002 verified; LAB-001 physical B1 observation remains pending
+Current stage: LAB-003 verified; LAB-001 physical B1 observation remains pending
 Current branch: main
-Last verified lab: LAB-002; LAB-001 build/flash/runtime evidence passed with physical B1 checklist pending
-Hardware state: LAB-002 built, flashed, verified and running USART2 logging through AP1
+Last verified lab: LAB-003; LAB-001 build/flash/runtime evidence passed with physical B1 checklist pending
+Hardware state: LAB-003 built, flashed, verified and running TIM2 PWM on PA5 with USART2 logging through AP1
 COM port: COM3
 
 ## Completed
@@ -25,6 +25,9 @@ COM port: COM3
 - Hardware debug sampling confirmed default PA5 `1 -> 0 -> 1` timing and a running system tick.
 - Debug state injection confirmed independent breathing level/PWM progression; reset restored default blink mode.
 - Added `scripts/Lab001.ps1` for reproducible generate/build/flash operations.
+- Created and verified LAB-002 USART2/ST-LINK VCP logging; clean COM3 capture confirmed the one-second sequence.
+- Created and verified LAB-003 TIM2_CH1 hardware PWM on PA5; AP1 flash verification, clean COM3 duty sweep, and GPIO/TIM2 register evidence passed.
+- Recorded the CubeMX2 2.1.0 omission of TIM2 GPIO setup and isolated the project-owned AF1 compatibility initialization in `app/app_timer_pwm.c`.
 
 ## Incomplete
 - Physically press B1 once and visually confirm exactly one LAB-001 mode switch.
@@ -33,9 +36,10 @@ COM port: COM3
 
 ## Known issues
 - CubeMX2 1.1.2 exports `mx_button.c` without `mx_button.h`; `platform/cubemx2_compat` contains the documented workaround.
+- CubeMX2 2.1.0 may omit GPIO initialization for a TIM output channel; LAB-003 documents the narrow compatibility layer and leaves generated files untouched.
 - AP0/AP2 do not identify the target in this setup; AP1 is required.
 - LAB-002 uses blocking UART transmit intentionally; DMA UART is a later lab.
 - No one was available to press B1 during unattended verification, so physical debounce/edge behavior remains an explicit manual check.
 
 ## Next Single Action
-Create LAB-003 as an independent timer/PWM project, while keeping LAB-001 B1 observation as a manual backlog item.
+Create LAB-004 as an independent ADC + DMA project using an internal ADC channel, while keeping LAB-001 B1 observation as a manual backlog item.
