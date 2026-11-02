@@ -1,0 +1,26 @@
+id: LAB-000
+name: board-and-toolchain-bringup
+status: in-progress
+difficulty: beginner
+depends_on: []
+hardware:
+  required:
+    - nucleo-c542rc
+  optional:
+    - usb-data-cable
+    - logic-analyzer
+external_wiring: false
+toolchain:
+  generator: STM32CubeMX 2.x
+  build: CMake/Ninja
+  debug: ST-LINK
+verification:
+  software: pending
+  hardware: pending
+reusable_outputs:
+  - platform/board/nucleo-c542rc
+acceptance:
+  - official board and MCU identity recorded
+  - tool versions recorded
+  - ST-LINK connection checked
+  - serial port and UART mapping recorded
