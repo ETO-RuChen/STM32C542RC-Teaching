@@ -14,4 +14,4 @@ See evidence.md. Do not mark this lab verified from software installation alone.
 
 ## Current command notes
 
-CubeMX 2 created the LAB000_BoardBringup.ioc2 configuration for STM32C542RCT6. The next implementation step is to assign the verified board LED, button, and USART2 pins, then generate a CMake project.
+CubeMX 2 created the LAB000_BoardBringup.ioc2 configuration for STM32C542RCT6. USART2 TX/RX are assigned to PA2/PA3 and labels USER_LED/USER_BUTTON are assigned to PA5/PC13. GPIO mode selection and CMake source generation remain pending.

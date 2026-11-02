@@ -23,6 +23,8 @@ Date: 2026-11-03 (Asia/Shanghai)
 - CubeMX 2 CLI created LAB000_BoardBringup.ioc2 for STM32C542RCT6.
 - CubeMX project save returned success.
 - Generated application source/build project: pending GPIO/UART configuration and code generation.
+- Pinout configuration: USART2_TX=PA2 and USART2_RX=PA3 assigned; PA5 labeled USER_LED; PC13 labeled USER_BUTTON.
+- GPIO mode configuration and generated CMake source: pending.
 
 ## Debug access note
 

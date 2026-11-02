@@ -520,11 +520,69 @@
 {
   "version": 10,
   "pinout-configuration": {
-    "userConfigurations": [],
+    "userConfigurations": [
+      {
+        "pin": {
+          "name": "PA2",
+          "position": "16",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "TT",
+          "index": 2,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "USART2",
+          "name": "USART2_TX",
+          "type": "alternate",
+          "alternateFunctionId": "AF7"
+        },
+        "pinned": true
+      },
+      {
+        "pin": {
+          "name": "PA3",
+          "position": "17",
+          "type": "gpio",
+          "powerSource": "VDD",
+          "ioStructureOptions": [
+            "a"
+          ],
+          "ioType": "I/O",
+          "ioStructure": "FT",
+          "index": 3,
+          "port": "A"
+        },
+        "signal": {
+          "instance": "USART2",
+          "name": "USART2_RX",
+          "type": "alternate",
+          "alternateFunctionId": "AF7"
+        },
+        "pinned": true
+      }
+    ],
     "needConfigurations": []
   },
   "pinout-excluded-pins": [],
-  "pinout-labels": [],
+  "pinout-labels": [
+    {
+      "position": "21",
+      "labels": [
+        "USER_LED"
+      ]
+    },
+    {
+      "position": "2",
+      "labels": [
+        "USER_BUTTON"
+      ]
+    }
+  ],
   "pinout-gpio-assignations": [],
   "pinout-gpio-groups": [
     {
