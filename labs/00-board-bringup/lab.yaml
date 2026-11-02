@@ -15,8 +15,8 @@ toolchain:
   build: CMake/Ninja
   debug: ST-LINK
 verification:
-  software: pending
-  hardware: pending
+  software: partial
+  hardware: partial
 reusable_outputs:
   - platform/board/nucleo-c542rc
 acceptance:

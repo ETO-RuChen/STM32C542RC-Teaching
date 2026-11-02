@@ -12,11 +12,11 @@ Date: 2026-11-03 (Asia/Shanghai)
 
 ## Hardware checks
 
-- Board identity: pending
-- ST-LINK connection: pending
-- MCU ID: pending
-- Virtual COM port: pending
-- UART mapping: pending
+- Board identity: NUCLEO-C542RC is the working target; physical silkscreen confirmation still pending
+- ST-LINK connection: Windows enumerated ST-Link Debug (USB VID_0483/PID_3754)
+- MCU ID: pending; no programmer CLI was found in the standard ST installation paths
+- Virtual COM port: STMicroelectronics STLink Virtual COM Port (COM3)
+- UART mapping: expected USART2 PA2/PA3 from the existing board notes; must be confirmed against this board and firmware
 
 ## Next test
 
