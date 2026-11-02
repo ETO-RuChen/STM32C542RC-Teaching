@@ -1,0 +1,17 @@
+name: repository-check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required repository files
+        shell: pwsh
+        run: ./scripts/validate-repository.ps1

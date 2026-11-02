@@ -13,6 +13,7 @@ COM port: COM3
 - Confirmed read-only CubeProgrammer connection through AP1: Device ID 0x44F, Rev Z, 256 KB NVM.
 - Created and saved the first STM32CubeMX 2 ioc2 configuration for LAB-000.
 - Assigned USART2 PA2/PA3 and labeled PA5/PC13 for the board LED/button in the ioc2.
+- Added a living backlog, architecture roadmap, repository validation script, and GitHub Actions structure check.
 
 ## Incomplete
 - Confirm official board resources and STM32C542RC capability matrix.
@@ -25,6 +26,7 @@ COM port: COM3
 - AP2 cannot identify the target; AP1 is the currently verified access port.
 - UART behavior and board LED/button response still need a generated firmware test.
 - CubeMX GPIO mode selection and CMake source generation are still pending.
+- The current ioc2 does not yet contain generated firmware sources.
 
 ## Next Single Action
 Create the first CubeMX/CMake board bring-up project and verify LED plus USART2/COM3 on hardware, using AP1 for debug access.
