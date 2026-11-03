@@ -14,7 +14,7 @@ Lab status is evidence-based: planned, in-progress, verified, or blocked. A plan
 | LAB-012 | Advanced timer: internal counter, RCR and software break | verified (internal only; external waveforms/deadtime pending) | LAB-002, LAB-003 |
 | LAB-013 | LPDMA three-node linked-list memory transfer | verified (linear queue; circular ADC buffering pending) | LAB-002, LAB-004 |
 | LAB-007 | CAN internal loopback and standard-ID filter | verified (classic CAN; external bus/FD pending) | LAB-002 |
-| LAB-008 | Crypto and TrustZone | planned | LAB-002 |
+| LAB-008 | Crypto and TrustZone | in-progress (AES-128 ECB KAT verified; HASH/RNG/TrustZone planned) | LAB-002 |
 | LAB-009 | Boot, IAP, and OTA | planned | LAB-002, LAB-008 |
 | LAB-010 | FreeRTOS and OSAL | planned | LAB-002, LAB-004 |
 | LAB-011 | Enterprise capstone | planned | LAB-003, LAB-006, LAB-008, LAB-009, LAB-010 |

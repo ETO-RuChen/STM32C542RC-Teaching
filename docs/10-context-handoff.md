@@ -1,12 +1,13 @@
 # Context Handoff
 
-Current stage: LAB-013 three-node LPDMA linked-list verified; external waveform/BKIN and LAB-001 physical B1 remain pending
+Current stage: LAB-008 AES-128 ECB known-answer stage verified; HASH/RNG/TrustZone and physical checks remain pending
 Current branch: main
-Last completed lab evidence: LAB-013 six COM3 rounds passed: 96/96 words, 6/6 guards, one queue completion callback
-Hardware state: LAB-013 flashed through AP1; LPDMA1_CH0 three-node linear memory queue, USART2 COM3
+Last completed lab evidence: AES six COM3 rounds: encryption 4/4, independent decryption 4/4, wrong-key difference and 6/6 guards passed
+Hardware state: LAB008_Aes flashed through AP1, public NIST test vectors only, USART2 COM3
 COM port: COM3
 
 ## Completed
+- Added the LAB-008 AES stage as a complete CubeMX2 CMake project, public NIST four-block AES-128 ECB known-answer test, independent reference decryption, wrong-key comparison, guard words, and Lab008-Aes.ps1. Overall LAB-008 remains in-progress for HASH/RNG/TrustZone.
 - Added LAB-013 complete CubeMX2 CMake project, LPDMA/HAL_Q three-node linear queue probe, dependency-order/data/guard/callback checks, tutorial/evidence, and Lab013.ps1. Removed exploratory unbound DMA configuration through official CLI before fresh export.
 - Added LAB-007 full CubeMX2 project, internal classic CAN loopback/filter adapter, tutorial/evidence, and Lab007.ps1. Configured nominal 500 kbps, standard filter 0x123/0x7FF; accepted payload and negative-filter checks passed.
 - Added LAB-012 full CubeMX2 CMake project, internal TIM1 center-aligned/RCR/software-break probe, tutorial, evidence, and Lab012.ps1. Hardware feedback requires bounded polling for MOE changes; immediate reads observed stale state.
@@ -55,4 +56,4 @@ COM port: COM3
 - LAB-005's capture begins with stale pre-reset bytes when COM3 is opened before a running target is reset; the subsequent startup and result lines are correct.
 
 ## Next Single Action
-Start LAB-008 cryptography with an AES known-answer test using public test vectors; keep HASH/RNG/TrustZone as separate verifiable stages. Keep circular DMA/ADC buffering, CAN FD/BRS, external bus/waveform/BKIN and earlier physical checks pending.
+Continue LAB-008 with a separate HASH known-digest project, then RNG and TrustZone. Retain AES authenticated modes/key lifecycle, circular DMA/ADC, CAN FD/BRS, external bus/waveform/BKIN and earlier physical checks as pending.

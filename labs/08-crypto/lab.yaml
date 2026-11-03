@@ -1,0 +1,19 @@
+id: LAB-008
+title: Cryptography and isolation staged experiments
+status: in-progress
+depends_on: [LAB-002]
+external_wiring: false
+hardware: NUCLEO-C542RC; ST-LINK VCP
+build: scripts/Lab008-Aes.ps1 -Action Build -Fresh
+flash: scripts/Lab008-Aes.ps1 -Action Flash
+evidence: evidence-aes.md
+stages:
+  aes128_ecb_known_answer: verified
+  hash: planned
+  rng: planned
+  trustzone: planned
+acceptance:
+  - AES stage encrypts four public NIST blocks to independently known ciphertext
+  - AES stage decrypts reference ciphertext to reference plaintext
+  - wrong public test key produces different plaintext
+  - hash RNG and TrustZone require separate recorded verification

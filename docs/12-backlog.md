@@ -32,6 +32,8 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 - [x] Resolve LAB-004 empty-project prerequisites, sequence channel encoding, and ADC clock configuration.
 - [x] FDCAN classic CAN internal loopback and standard-ID filter without external transceiver.
 - [ ] Extend FDCAN to FD/BRS, interrupt receive and queued service; external CAN bus verification remains separate.
-- [ ] AES, Hash, RNG, CORDIC, TrustZone, USB, and QSPI labs.
+- [x] LAB-006 CORDIC four-vector hardware selftest.
+- [x] LAB-008 AES-128 ECB public NIST four-block encryption/decryption test.
+- [ ] AES authenticated modes and key lifecycle; HASH, RNG, TrustZone, USB and QSPI labs.
 - [x] Complete LAB-005 AP1 flash and COM3 capture.
 - [ ] Bootloader, IAP, transport-independent OTA, FreeRTOS, OSAL, and enterprise capstone.
