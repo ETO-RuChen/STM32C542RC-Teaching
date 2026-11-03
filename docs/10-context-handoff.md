@@ -1,12 +1,14 @@
 # Context Handoff
 
-Current stage: LAB-006 CORDIC generated, built, AP1 flashed and COM3 four-vector selftest verified; LAB-001 physical B1 observation and LAB-003 waveform remain pending
+Current stage: LAB-004 ADC/VrefInt/LPDMA generation, build, AP1 flash and COM3 seven-block capture verified; LAB-001 physical B1 observation and LAB-003 waveform remain pending
 Current branch: main
-Last completed lab evidence: LAB-006 build, AP1 flash/verify, and repeated COM3 four-vector selftest passed
-Hardware state: LAB-006 image flashed through AP1; COM3 emitted SELFTEST PASS 4/4 for three captured rounds
+Last completed lab evidence: LAB-004 seven consecutive 64-sample DMA blocks passed (1507..1509 raw)
+Hardware state: LAB-004 image flashed through AP1; COM3 emitted valid=64/64 and PASS
 COM port: COM3
 
 ## Completed
+- Resolved LAB-004 export by enabling HALCore/SystemInit; selected official sequence value VREFINT and configured RCC HCLK/2 (24 MHz) ADC clock. Added complete generated/vendor code, bounded block capture adapter, application-owned sample buffer, and teaching documents.
+- Diagnosed stale in-place export; fresh destination produced matching clock/system sources. Lab004.ps1 regenerates through a fresh out directory, preserves app/top-level integration, and builds the result.
 - Resolved LAB-006 null-object export failure by enabling HALCore and SystemInit in the empty project; documented the differential result and taught the repository skill this prerequisite.
 - Added full LAB-006 CORDIC CMake project, Q1.31 teaching material, four-vector selftest, and Lab006.ps1. HAL 2.1.0 single-vector polling loop boundary is documented and avoided through batch input.
 - Created a separate public GitHub repository for the teaching project.
@@ -50,4 +52,4 @@ COM port: COM3
 - LAB-005's capture begins with stale pre-reset bytes when COM3 is opened before a running target is reset; the subsequent startup and result lines are correct.
 
 ## Next Single Action
-Retry LAB-004 export with HALCore and SystemInit enabled, applying the prerequisite verified by LAB-006. Keep physical B1 and external PWM observation pending until actually observed.
+Proceed to LAB-012 advanced timer (center-aligned PWM, repetition counter and safe break concepts without motor wiring); keep physical B1 and external waveform observation pending until actually observed.

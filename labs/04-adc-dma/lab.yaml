@@ -1,6 +1,6 @@
 id: LAB-004
 name: adc-vrefint-dma
-status: in-progress
+status: verified
 difficulty: intermediate
 depends_on:
   - LAB-002
@@ -17,9 +17,10 @@ toolchain:
   build: CMake/Ninja
 verification:
   source_configuration: passed
-  code_generation: blocked_by_generator_error
-  software_build: pending
-  hardware_runtime: pending
+  code_generation: passed
+  software_build: passed
+  flash_verify: passed_ap1
+  hardware_runtime: passed_com3_seven_blocks
 acceptance:
   - ADC1 samples the internal VrefInt channel
   - DMA transfers samples into an application-owned buffer

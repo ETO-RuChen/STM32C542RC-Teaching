@@ -8,7 +8,7 @@ Lab status is evidence-based: planned, in-progress, verified, or blocked. A plan
 | LAB-001 | LED and button | in-progress (build/flash/runtime passed; physical B1 check pending) | LAB-000 |
 | LAB-002 | UART logging | verified | LAB-000 |
 | LAB-003 | Timer and PWM | in-progress (software/register verified; external waveform pending) | LAB-001, LAB-002 |
-| LAB-004 | ADC and DMA | in-progress (CubeMX2 ADC generator error) | LAB-002 |
+| LAB-004 | ADC and DMA | verified (64-sample blocks via LPDMA1; COM3 capture) | LAB-002 |
 | LAB-005 | Cortex-M33 FPU | verified | LAB-002 |
 | LAB-006 | CORDIC Q1.31 cosine and sine | verified | LAB-002 |
 | LAB-012 | Advanced timer | planned | LAB-003 |
