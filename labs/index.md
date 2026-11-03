@@ -12,7 +12,7 @@ Lab status is evidence-based: planned, in-progress, verified, or blocked. A plan
 | LAB-005 | Cortex-M33 FPU | verified | LAB-002 |
 | LAB-006 | CORDIC Q1.31 cosine and sine | verified | LAB-002 |
 | LAB-012 | Advanced timer: internal counter, RCR and software break | verified (internal only; external waveforms/deadtime pending) | LAB-002, LAB-003 |
-| LAB-013 | DMA linked-list | planned | LAB-004 |
+| LAB-013 | LPDMA three-node linked-list memory transfer | verified (linear queue; circular ADC buffering pending) | LAB-002, LAB-004 |
 | LAB-007 | CAN internal loopback and standard-ID filter | verified (classic CAN; external bus/FD pending) | LAB-002 |
 | LAB-008 | Crypto and TrustZone | planned | LAB-002 |
 | LAB-009 | Boot, IAP, and OTA | planned | LAB-002, LAB-008 |

@@ -27,7 +27,8 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 - [x] Complete LAB-003 AP1 flash, COM3 capture, and PA5 PWM register evidence.
 - [ ] Connect the logic analyzer or oscilloscope to the board's PA5 header pin and capture the approximately 144 Hz TIM2 waveform.
 - [x] Verify LAB-004 internal VrefInt finite-block ADC/LPDMA capture, AP1 flash and COM3 statistics.
-- [ ] DMA linked-list and gap-free double-buffer acquisition.
+- [x] LAB-013 three-node LPDMA linear linked-list memory transfer, dependent data and guard-word checks.
+- [ ] Circular linked-list and gap-free ADC double-buffer acquisition.
 - [x] Resolve LAB-004 empty-project prerequisites, sequence channel encoding, and ADC clock configuration.
 - [x] FDCAN classic CAN internal loopback and standard-ID filter without external transceiver.
 - [ ] Extend FDCAN to FD/BRS, interrupt receive and queued service; external CAN bus verification remains separate.

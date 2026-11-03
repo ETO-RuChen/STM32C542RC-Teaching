@@ -1,0 +1,16 @@
+id: LAB-013
+title: LPDMA three-node linear memory transfer queue
+status: verified
+depends_on: [LAB-004, LAB-002]
+external_wiring: false
+hardware: NUCLEO-C542RC; ST-LINK VCP
+build: scripts/Lab013.ps1 -Action Build -Fresh
+flash: scripts/Lab013.ps1 -Action Flash
+evidence: evidence.md
+scope: three_static_nodes_linear_queue_only
+acceptance:
+  - one DMA start executes three linked nodes
+  - node 2 consumes the temporary data produced by node 0
+  - all 96 destination words match expected patterns
+  - six destination guard words remain unchanged
+  - one queue-completion callback per round

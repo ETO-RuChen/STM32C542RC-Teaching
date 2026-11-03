@@ -1,12 +1,13 @@
 # Context Handoff
 
-Current stage: LAB-007 classic CAN internal loopback/filter verified; LAB-012 internal probe verified; external waveform/BKIN and LAB-001 physical B1 remain pending
+Current stage: LAB-013 three-node LPDMA linked-list verified; external waveform/BKIN and LAB-001 physical B1 remain pending
 Current branch: main
-Last completed lab evidence: LAB-007 five consecutive COM3 rounds passed: accepted 0x123 plus payload, rejected 0x321 after successful internal transmission
-Hardware state: LAB-007 flashed through AP1; FDCAN1 internal loopback classic CAN 500 kbps; PA11/PA12 assigned AF9, target USB not used
+Last completed lab evidence: LAB-013 six COM3 rounds passed: 96/96 words, 6/6 guards, one queue completion callback
+Hardware state: LAB-013 flashed through AP1; LPDMA1_CH0 three-node linear memory queue, USART2 COM3
 COM port: COM3
 
 ## Completed
+- Added LAB-013 complete CubeMX2 CMake project, LPDMA/HAL_Q three-node linear queue probe, dependency-order/data/guard/callback checks, tutorial/evidence, and Lab013.ps1. Removed exploratory unbound DMA configuration through official CLI before fresh export.
 - Added LAB-007 full CubeMX2 project, internal classic CAN loopback/filter adapter, tutorial/evidence, and Lab007.ps1. Configured nominal 500 kbps, standard filter 0x123/0x7FF; accepted payload and negative-filter checks passed.
 - Added LAB-012 full CubeMX2 CMake project, internal TIM1 center-aligned/RCR/software-break probe, tutorial, evidence, and Lab012.ps1. Hardware feedback requires bounded polling for MOE changes; immediate reads observed stale state.
 - Resolved LAB-004 export by enabling HALCore/SystemInit; selected official sequence value VREFINT and configured RCC HCLK/2 (24 MHz) ADC clock. Added complete generated/vendor code, bounded block capture adapter, application-owned sample buffer, and teaching documents.
@@ -54,4 +55,4 @@ COM port: COM3
 - LAB-005's capture begins with stale pre-reset bytes when COM3 is opened before a running target is reset; the subsequent startup and result lines are correct.
 
 ## Next Single Action
-Proceed to LAB-013 DMA linked-list memory transfer without external wiring. Keep CAN FD/BRS, external CAN bus, LAB-012 waveform/deadtime/BKIN and earlier physical checks pending.
+Start LAB-008 cryptography with an AES known-answer test using public test vectors; keep HASH/RNG/TrustZone as separate verifiable stages. Keep circular DMA/ADC buffering, CAN FD/BRS, external bus/waveform/BKIN and earlier physical checks pending.
