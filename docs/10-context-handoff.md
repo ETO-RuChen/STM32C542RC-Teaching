@@ -1,12 +1,14 @@
 # Context Handoff
 
-Current stage: LAB-005 FPU build/AP1 flash/COM3 runtime verified; LAB-001 physical B1 observation and LAB-003 waveform remain pending
+Current stage: LAB-006 CORDIC generated, built, AP1 flashed and COM3 four-vector selftest verified; LAB-001 physical B1 observation and LAB-003 waveform remain pending
 Current branch: main
-Last completed lab evidence: LAB-005 build, AP1 flash/verify, and COM3 runtime capture passed
-Hardware state: LAB-005 image flashed through AP1 and emitted the expected FPU result on COM3
+Last completed lab evidence: LAB-006 build, AP1 flash/verify, and repeated COM3 four-vector selftest passed
+Hardware state: LAB-006 image flashed through AP1; COM3 emitted SELFTEST PASS 4/4 for three captured rounds
 COM port: COM3
 
 ## Completed
+- Resolved LAB-006 null-object export failure by enabling HALCore and SystemInit in the empty project; documented the differential result and taught the repository skill this prerequisite.
+- Added full LAB-006 CORDIC CMake project, Q1.31 teaching material, four-vector selftest, and Lab006.ps1. HAL 2.1.0 single-vector polling loop boundary is documented and avoided through batch input.
 - Created a separate public GitHub repository for the teaching project.
 - Added AI-readable project rules and metadata.
 - Confirmed Windows enumeration of ST-LINK and COM3.
@@ -48,4 +50,4 @@ COM port: COM3
 - LAB-005's capture begins with stale pre-reset bytes when COM3 is opened before a running target is reset; the subsequent startup and result lines are correct.
 
 ## Next Single Action
-Complete the LAB-001 physical B1 press/visual check if hardware access is available; otherwise proceed to the next independent advanced-peripheral lab while retaining that manual item.
+Retry LAB-004 export with HALCore and SystemInit enabled, applying the prerequisite verified by LAB-006. Keep physical B1 and external PWM observation pending until actually observed.

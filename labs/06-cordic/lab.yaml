@@ -1,0 +1,12 @@
+id: LAB-006
+title: CORDIC Q1.31 cosine and sine
+status: verified
+depends_on: [LAB-002]
+hardware: NUCLEO-C542RC; ST-LINK VCP
+external_wiring: false
+build: scripts/Lab006.ps1 -Action Build -Fresh
+flash: scripts/Lab006.ps1 -Action Flash
+evidence: evidence.md
+acceptance:
+  - four angles produce expected cosine and sine within 4096 Q1.31 units
+  - repeated COM3 SELFTEST PASS 4/4
