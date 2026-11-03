@@ -1,12 +1,13 @@
 # Context Handoff
 
-Current stage: LAB-004 ADC/VrefInt/LPDMA generation, build, AP1 flash and COM3 seven-block capture verified; LAB-001 physical B1 observation and LAB-003 waveform remain pending
+Current stage: LAB-012 internal TIM1 center-aligned/RCR/software-break probe verified; external PWM/deadtime/BKIN and LAB-001 physical B1 remain pending
 Current branch: main
-Last completed lab evidence: LAB-004 seven consecutive 64-sample DMA blocks passed (1507..1509 raw)
-Hardware state: LAB-004 image flashed through AP1; COM3 emitted valid=64/64 and PASS
+Last completed lab evidence: LAB-012 four consecutive COM3 rounds passed: RCR0=100/RCR3=25 updates in 100 ms, directions=3, MOE=1->0, BIF=1, held=1, rearm=1
+Hardware state: LAB-012 flashed through AP1; no TIM1 GPIO mapped; internal diagnostic only
 COM port: COM3
 
 ## Completed
+- Added LAB-012 full CubeMX2 CMake project, internal TIM1 center-aligned/RCR/software-break probe, tutorial, evidence, and Lab012.ps1. Hardware feedback requires bounded polling for MOE changes; immediate reads observed stale state.
 - Resolved LAB-004 export by enabling HALCore/SystemInit; selected official sequence value VREFINT and configured RCC HCLK/2 (24 MHz) ADC clock. Added complete generated/vendor code, bounded block capture adapter, application-owned sample buffer, and teaching documents.
 - Diagnosed stale in-place export; fresh destination produced matching clock/system sources. Lab004.ps1 regenerates through a fresh out directory, preserves app/top-level integration, and builds the result.
 - Resolved LAB-006 null-object export failure by enabling HALCore and SystemInit in the empty project; documented the differential result and taught the repository skill this prerequisite.
@@ -52,4 +53,4 @@ COM port: COM3
 - LAB-005's capture begins with stale pre-reset bytes when COM3 is opened before a running target is reset; the subsequent startup and result lines are correct.
 
 ## Next Single Action
-Proceed to LAB-012 advanced timer (center-aligned PWM, repetition counter and safe break concepts without motor wiring); keep physical B1 and external waveform observation pending until actually observed.
+Create LAB-007 FDCAN internal loopback without external equipment. Keep LAB-012 external waveform/complementary/deadtime/BKIN tasks and earlier physical checks pending.

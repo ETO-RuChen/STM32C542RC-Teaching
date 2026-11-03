@@ -21,6 +21,9 @@ Items stay here when they need hardware, a missing tool, or a later architectura
 
 ## Future labs
 
+- [x] LAB-012 internal TIM1 center-aligned direction, RCR update ratio, software break and explicit rearm verified.
+- [ ] Extend LAB-012 with mapped CH1/CH1N, complementary/deadtime waveform observation and external BKIN; no motor required.
+
 - [x] Complete LAB-003 AP1 flash, COM3 capture, and PA5 PWM register evidence.
 - [ ] Connect the logic analyzer or oscilloscope to the board's PA5 header pin and capture the approximately 144 Hz TIM2 waveform.
 - [x] Verify LAB-004 internal VrefInt finite-block ADC/LPDMA capture, AP1 flash and COM3 statistics.

@@ -1,0 +1,16 @@
+id: LAB-012
+title: TIM1 center-aligned counter repetition and software break
+status: verified
+depends_on: [LAB-002, LAB-003]
+external_wiring: false
+hardware: NUCLEO-C542RC; USART2 via ST-LINK VCP
+scope: internal_counter_compare_and_output_gate_only
+build: scripts/Lab012.ps1 -Action Build -Fresh
+flash: scripts/Lab012.ps1 -Action Flash
+evidence: evidence.md
+acceptance:
+  - TIM1 counts both up and down in center-aligned mode
+  - update frequency with RCR 3 is about one quarter of RCR 0
+  - software break clears MOE and latches BIF
+  - AOE disabled keeps output disabled until explicit rearm
+  - no external output waveform claim without pin mapping and measurement

@@ -11,7 +11,7 @@ Lab status is evidence-based: planned, in-progress, verified, or blocked. A plan
 | LAB-004 | ADC and DMA | verified (64-sample blocks via LPDMA1; COM3 capture) | LAB-002 |
 | LAB-005 | Cortex-M33 FPU | verified | LAB-002 |
 | LAB-006 | CORDIC Q1.31 cosine and sine | verified | LAB-002 |
-| LAB-012 | Advanced timer | planned | LAB-003 |
+| LAB-012 | Advanced timer: internal counter, RCR and software break | verified (internal only; external waveforms/deadtime pending) | LAB-002, LAB-003 |
 | LAB-013 | DMA linked-list | planned | LAB-004 |
 | LAB-007 | CAN loopback | planned | LAB-002 |
 | LAB-008 | Crypto and TrustZone | planned | LAB-002 |
