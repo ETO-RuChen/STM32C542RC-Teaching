@@ -1,12 +1,13 @@
 # Context Handoff
 
-Current stage: LAB-012 internal TIM1 center-aligned/RCR/software-break probe verified; external PWM/deadtime/BKIN and LAB-001 physical B1 remain pending
+Current stage: LAB-007 classic CAN internal loopback/filter verified; LAB-012 internal probe verified; external waveform/BKIN and LAB-001 physical B1 remain pending
 Current branch: main
-Last completed lab evidence: LAB-012 four consecutive COM3 rounds passed: RCR0=100/RCR3=25 updates in 100 ms, directions=3, MOE=1->0, BIF=1, held=1, rearm=1
-Hardware state: LAB-012 flashed through AP1; no TIM1 GPIO mapped; internal diagnostic only
+Last completed lab evidence: LAB-007 five consecutive COM3 rounds passed: accepted 0x123 plus payload, rejected 0x321 after successful internal transmission
+Hardware state: LAB-007 flashed through AP1; FDCAN1 internal loopback classic CAN 500 kbps; PA11/PA12 assigned AF9, target USB not used
 COM port: COM3
 
 ## Completed
+- Added LAB-007 full CubeMX2 project, internal classic CAN loopback/filter adapter, tutorial/evidence, and Lab007.ps1. Configured nominal 500 kbps, standard filter 0x123/0x7FF; accepted payload and negative-filter checks passed.
 - Added LAB-012 full CubeMX2 CMake project, internal TIM1 center-aligned/RCR/software-break probe, tutorial, evidence, and Lab012.ps1. Hardware feedback requires bounded polling for MOE changes; immediate reads observed stale state.
 - Resolved LAB-004 export by enabling HALCore/SystemInit; selected official sequence value VREFINT and configured RCC HCLK/2 (24 MHz) ADC clock. Added complete generated/vendor code, bounded block capture adapter, application-owned sample buffer, and teaching documents.
 - Diagnosed stale in-place export; fresh destination produced matching clock/system sources. Lab004.ps1 regenerates through a fresh out directory, preserves app/top-level integration, and builds the result.
@@ -53,4 +54,4 @@ COM port: COM3
 - LAB-005's capture begins with stale pre-reset bytes when COM3 is opened before a running target is reset; the subsequent startup and result lines are correct.
 
 ## Next Single Action
-Create LAB-007 FDCAN internal loopback without external equipment. Keep LAB-012 external waveform/complementary/deadtime/BKIN tasks and earlier physical checks pending.
+Proceed to LAB-013 DMA linked-list memory transfer without external wiring. Keep CAN FD/BRS, external CAN bus, LAB-012 waveform/deadtime/BKIN and earlier physical checks pending.

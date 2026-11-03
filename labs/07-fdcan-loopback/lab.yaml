@@ -1,0 +1,15 @@
+id: LAB-007
+title: FDCAN1 classic CAN internal loopback and filter
+status: verified
+depends_on: [LAB-002]
+external_wiring: false
+hardware: NUCLEO-C542RC; ST-LINK VCP
+build: scripts/Lab007.ps1 -Action Build -Fresh
+flash: scripts/Lab007.ps1 -Action Flash
+evidence: evidence.md
+scope: classic_can_internal_loopback_and_standard_filter_only
+acceptance:
+  - internal loopback classic CAN sends and receives identical eight-byte payload
+  - standard ID 0x123 accepted by filter 0 into FIFO0
+  - standard ID 0x321 transmits internally but produces no receive entry
+  - no external bus or transceiver claim
